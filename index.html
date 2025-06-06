@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,25 +14,41 @@
     />
   </head>
   <body>
-    <header>
-      <form class="search-form">
-        <input
-          type="search"
-          placeholder="Enter a city..."
-          required
-          class="search-form-input"
-        />
-        <input type="submit" value="Search" class="search-form-button" />
-      </form>
-    </header>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
 
-    <main>
-      <h1 class="'weather-app-city">Paris</h1>
-      <p class="'weather-app-details">
-        Tuesday 19:10, scattered clouds<br />
-        Humidity: <strong>60%</strong>, Wind: <strong>4.63 km/h</strong>
-      </p>
-      <div class="'weather-app-temperature">🌤️ 12°C</div>
-    </main>
+      <main>
+        <div class="weather-app-top-row">
+          <div class="weather-app-left">
+            <h1 class="weather-app-city">Paris</h1>
+            <p class="weather-app-details">
+              Tuesday 19:10, scattered clouds<br />
+              Humidity: <strong>60%</strong>, Wind: <strong>4.63 km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <span class="weather-app-icon">🌤️</span>
+            <span class="weather-app-temperature">12</span>
+            <span class="weather-app-unit">°C</span>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        This Project Was Coded By <a href="#">Sharon Ogbonna</a> is
+        <a href="#">open-sourced on GitHub</a> and
+        <a href="#">hosted on Netlify</a>
+      </footer>
+    </div>
   </body>
 </html>

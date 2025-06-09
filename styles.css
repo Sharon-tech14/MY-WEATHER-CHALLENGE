@@ -90,8 +90,40 @@ footer {
   color: #999;
 }
 #humidity,
-#wind-speed 
-{
+#wind-speed {
   color: #f65282;
   font-weight: bold;
+}
+.weather-forecast-date {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-icon {
+  width: 33px;
+  height: 33px;
+  display: block;
+  margin: 0 auto;
+}
+
+.weather-forecast-temperatures {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.weather-forecast-temperature {
+  color: #f65282;
+  font-size: 16px;
+  display: flex;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
